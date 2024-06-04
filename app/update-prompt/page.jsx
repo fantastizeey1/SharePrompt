@@ -100,7 +100,7 @@ const UpdatePrompt = () => {
   const promptId = searchParams.get("id");
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense>
       <UpdatePromptContent promptId={promptId} />
     </Suspense>
   );
